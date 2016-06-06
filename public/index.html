@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html><head>
+
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+
+	<title>nbind example</title>
+
+	<script type="text/javascript">
+
+var Module = {
+	onRuntimeInitialized: function() {
+		this.ccall('nbind_init');
+
+		var lib = this;
+
+		document.write('Platform: ' + lib.Example.test());
+		document.close();
+	}
+};
+
+	</script>
+
+	<script src="nbind.js"></script>
+
+</head><body>
+
+</body></html>
