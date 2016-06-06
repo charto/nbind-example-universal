@@ -30,7 +30,7 @@
   "homepage": "https://github.com/charto/nbind-example-universal#readme",
   "dependencies": {
     "autogypi": "^0.2.2",
-    "nbind": "^0.2.1",
+    "nbind": "https://github.com/charto/nbind/tarball/develop",
     "node-gyp": "^3.3.1"
   },
   "devDependencies": {
