@@ -2,7 +2,6 @@ node_modules/
 build/*/build/
 dist/
 auto*.gypi
-*.js
 *.log.*
 *.log
 *.tgz

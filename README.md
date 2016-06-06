@@ -29,6 +29,10 @@ npm install
 Then run the example in Node.js with `npm test` or in the browser by running
 `npm start` and navigating to [http://localhost:8080/](http://localhost:8080/).
 
+Note that you shouldn't add the compiled asm.js code in version control.
+In this example it's present in the `dist` directory simply to allow installing
+directly from Github without having Emscripten available.
+
 License
 =======
 
