@@ -7,8 +7,6 @@ env:
   - CC=gcc-4.8 CXX=g++-4.8
   - CC=echo CXX=echo
 
-install: npm install nbind && cd node_modules/nbind && npm install && cd ../.. && npm install
-
 addons:
   apt:
     sources:
