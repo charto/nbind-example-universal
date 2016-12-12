@@ -7,22 +7,16 @@
 
 	<title>nbind example</title>
 
-	<script type="text/javascript">
-
-var Module = {
-	onRuntimeInitialized: function() {
-		this.ccall('nbind_init');
-
-		var lib = this;
-
-		document.write('Platform: ' + lib.Example.test());
-		document.close();
-	}
-};
-
-	</script>
-
 	<script src="nbind.js"></script>
+
+	<script>
+		nbind.init(function(err, binding) {
+			var lib = binding.lib;
+
+			document.write('Platform: ' + lib.Example.test());
+			document.close();
+		});
+	</script>
 
 </head><body>
 
